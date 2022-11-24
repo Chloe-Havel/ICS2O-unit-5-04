@@ -28,3 +28,4 @@ if ((day == "Tuesday" || day == thursday ) || (age > 12 && age <21)) {
 else {
   document.getElementById("answer").innerHTML =
   "You must pay regular priseing"
+}
