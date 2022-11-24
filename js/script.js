@@ -21,11 +21,9 @@ if (navigator.serviceWorker) {
 
 var day = "Friday"
 var age = "11"
-if ((day == "Tuesday" || day == thursday ) || (age > 12 && age <21)) {
+if (day == "Tuesday" || day == thursday || (age > 12 && age < 21)) {
   document.getElementById("answer").innerHTML =
-  "You are eligible for a student priseing"
-}
-else {
-  document.getElementById("answer").innerHTML =
-  "You must pay regular priseing"
+    "You are eligible for a student priseing"
+} else {
+  document.getElementById("answer").innerHTML = "You must pay regular priseing"
 }
