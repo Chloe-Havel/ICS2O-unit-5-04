@@ -19,13 +19,14 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  var day =  document.getElementById("day").value
+  var day = document.getElementById("day").value
   var age = document.getElementById("age").value
 
-  if ((day == "Tuesday" || day == "Thursday") || (age > 12 && age < 21)) {
+  if (day == "Tuesday" || day == "Thursday" || (age > 12 && age < 21)) {
     document.getElementById("answer").innerHTML =
       "You are eligible for a student priseing"
   } else {
-    document.getElementById("answer").innerHTML = "You must pay regular priseing"
+    document.getElementById("answer").innerHTML =
+      "You must pay regular priseing"
   }
 }
